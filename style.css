@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    background-color: lightgrey;
+}
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/BornACrime_Retouched-1024x1024.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: absolute;
+    color: white;
+}
+header h1{
+
+    position: relative;
+    font-size: 80px;
+    top:0px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+header h2, header p{
+    position: relative;
+    font-size: 40px;
+    top:180px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+button{
+    width: 250px;
+    height: 50px;
+    background-color: skyblue;
+    color: rgb(70, 67, 67);
+    position: relative;
+    justify-content: center;
+    left: 800px;
+    bottom: -200px;
+    border: none;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+header p{
+    font-size: 30px;
+}
+#demo{
+    font-size: 20px;
+    width: 50%;
+    position: relative;
+    left: 400px;
+
+}
+.section{
+    background: none;
+    width: 30%;
+    position: absolute;
+    bottom: -500px;
+    font-size: 20px;
+    padding: 20px;
+    border: 3px solid rgb(255, 230, 0);
+    background-color: rgb(53, 52, 52);
+    left: 650px;
+}
+.section  p{
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+}
+.section h1{
+    text-align: center;
+    color: white;
+}
+.blog{
+    position: absolute;
+    bottom: -600px;
+    border: 3px solid rgb(161, 19, 255);
+    background-color: rgb(36, 36, 36);
+    width: 30%;
+    box-shadow: 1px 1px 1px 1px rgb(230, 176, 222);
+    color: white;
+    padding: 20px;
+    line-height: 1.5;
+    left: 10px;
+    font-size: 20px;
+}
+.blog h1{
+    text-align: center;
+}
+.experience{
+    position: absolute;
+    border: 3px solid #00a0fd;
+    background-color: rgb(36, 36, 36);
+    bottom: -600px;
+    width: 30%;
+    color: white;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 20px;
+    right: 10px;
+
+}
+.experience h1{
+    text-align: center;
+}
+@media(max-width:500px) and (min-width: 300px){
+    header{
+        width: 100%;
+        height: 300vh;
+    }
+    header h1{
+        font-size: 60px;
+        top:70px;
+
+    }
+    .section{
+        width: 89%;
+        height: 300px;
+        top:1900px;
+        left: 0;
+        
+    }
+    .blog{
+        width: 89%;
+        left: 0;
+        height: 600px;
+    }
+    button{
+        left: 80px;
+    }
+    #demo{
+        left: 20px;
+        width: 80%;
+    }
+    .experience{
+        width: 89%;
+        height: 700px;
+        left: 0;
+        bottom: 0;
+        top:2500px
+    }
+}
+@media only screen and (max-width:1350px) and (min-width:701px){
+    button{
+        left: 300px;
+        position: relative;
+    }
+    .section{
+        top: 2000px;
+        left: 10px;
+        width: 89%;
+        height: 200px;
+    }
+    .blog{
+        top:800px;
+        width: 40%;
+        height: 700px;
+    }
+    .experience{
+        width: 40%;
+    }
+    #demo{
+        left: 10px;
+        width: 90%;
+    }
+}
