@@ -24,6 +24,7 @@ nav a{
     border-radius: 30px;
     font-weight: bolder;
     color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 nav a:hover{
     background-color: rgb(158, 152, 152);
