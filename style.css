@@ -1,72 +1,47 @@
 body{
-    margin: 0;
-    background-color: lightgrey;
+    overflow-x: hidden;
 }
-header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/BornACrime_Retouched-1024x1024.jpg);
+.image{
+    width: 100%;
+    height: 100px;
     background-position: center;
     background-size: cover;
-    height: 200vh;
-    width: 100%;
     background-repeat: no-repeat;
-    margin: 0;
     position: absolute;
-    color: white;
 }
-header h1{
-
-    position: relative;
-    font-size: 80px;
-    top:0px;
+nav{
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    gap:50px;
+    top: 0;
 }
-header h2, header p{
-    position: relative;
-    font-size: 40px;
-    top:180px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-button{
-    width: 250px;
-    height: 50px;
-    background-color: skyblue;
-    color: rgb(70, 67, 67);
-    position: relative;
-    justify-content: center;
-    left: 800px;
-    bottom: -200px;
-    border: none;
-    border-radius: 20px;
-}
-button:hover{
-    background-color: black;
-    color: white;
-}
-header p{
-    font-size: 30px;
-}
-#demo{
+nav a{
+    padding: 30px;
+    background-color: rgb(64, 64, 64);
     font-size: 20px;
-    width: 50%;
-    position: relative;
-    left: 400px;
-
+    border-radius: 30px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
 }
+nav a:hover{
+    background-color: rgb(158, 152, 152);
+    color: black;
+}
+
+/*  */
+
 .section{
     background: none;
     width: 30%;
     position: absolute;
-    bottom: -500px;
     font-size: 20px;
     padding: 20px;
+    top:300px;
     border: 3px solid rgb(255, 230, 0);
     background-color: rgb(53, 52, 52);
-    left: 650px;
+    left: 750px;
 }
 .section  p{
     justify-content: center;
@@ -80,36 +55,61 @@ header p{
 }
 .blog{
     position: absolute;
-    bottom: -600px;
-    border: 3px solid rgb(161, 19, 255);
+    transition: opacity 0.3s ease;
+    top: 700px;
+    border: 3px solid rgb(255, 230, 0);    
     background-color: rgb(36, 36, 36);
     width: 30%;
     box-shadow: 1px 1px 1px 1px rgb(230, 176, 222);
     color: white;
     padding: 20px;
     line-height: 1.5;
-    left: 10px;
+    left: 200px;
     font-size: 20px;
+    right: 550px;
+
 }
 .blog h1{
     text-align: center;
 }
 .experience{
     position: absolute;
-    border: 3px solid #00a0fd;
+    border: 3px solid rgb(255, 230, 0);    
     background-color: rgb(36, 36, 36);
-    bottom: -600px;
     width: 30%;
     color: white;
+    top:700px;
     padding: 20px;
     line-height: 1.5;
     font-size: 20px;
-    right: 10px;
+    right: 250px;
 
 }
 .experience h1{
     text-align: center;
 }
+
+.crime{
+    /* position: relative;
+    left: 78%;
+    top:100px;
+    width: 400px;
+    height: 500px; */
+    /* background-image: url(images/born-a-crime-4.jpg); */
+    /* filter: brightness(40%); */
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/flower.jpg);
+    height: 150vh;
+    background-position: center;
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
 @media(max-width:500px) and (min-width: 300px){
     header{
         width: 100%;
@@ -118,12 +118,22 @@ header p{
     header h1{
         font-size: 60px;
         top:70px;
+    position: relative;
+    font-size: 80px;
+    top:0px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+header h2, header p{
+    position: relative;
+    font-size: 40px;
 
     }
     .section{
         width: 89%;
         height: 300px;
-        top:1900px;
+        top:1700px;
         left: 0;
         
     }
@@ -145,6 +155,28 @@ header p{
         left: 0;
         bottom: 0;
         top:2500px
+    }
+    .image img{
+        left: 0;
+        width: 300px;
+        height: 200px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog{
+        height: 90vh;
+    }
+    .section{
+        height: 50vh;
+
+    }
+    .experience{
+        height: 100vh;
+    }
+    .footer{
+        display: none;
     }
 }
 @media only screen and (max-width:1350px) and (min-width:701px){
@@ -170,4 +202,15 @@ header p{
         left: 10px;
         width: 90%;
     }
+    .footer{
+        display: none;
+    }
+}
+.footer{
+    position: relative;
+    top: 1100px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    z-index: 1000;
 }
